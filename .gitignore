@@ -3,6 +3,7 @@
 *.cmd
 *.tmp
 *.so
+*.deb
 build/
 include/autoconf.mk*
 include/config.h
