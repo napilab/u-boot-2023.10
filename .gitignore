@@ -32,7 +32,6 @@ mkimage-*
 simple-bin*
 arch/arm/dts/*.dtb
 arch/arm/dts/*.dts.tmp
-blobs/
 *.su
 *.s
 *.lex.c
