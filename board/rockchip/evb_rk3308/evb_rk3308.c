@@ -6,6 +6,7 @@
 #include <common.h>
 #include <adc.h>
 #include <asm/global_data.h>
+#include <env.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 
@@ -42,4 +43,19 @@ int rockchip_dnl_key_pressed(void)
 		return true;
 	else
 		return false;
+}
+
+int rk_board_late_init(void)
+{
+
+   env_set("bootcmd",
+    "setenv fdt_addr_r 0x01e00000;"
+    "setenv kernel_addr_r 0x02080000;"
+    "setenv ramdisk_addr_r 0x06000000;"
+    "setenv kernel_comp_addr_r 0x08000000;"
+    "setenv kernel_comp_size 0x04000000;"
+    "bootflow scan");
+   
+   return 0;
+
 }
