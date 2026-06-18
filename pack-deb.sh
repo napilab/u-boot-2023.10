@@ -4,7 +4,7 @@
 # Структура проекта u-boot-2023.10:
 #   blobs/
 #   ├── rk3308_ddr_589MHz_uart0_m0_v2.07.bin
-#   ├── rk3308_miniloader_v1.39.bin
+#   ├── rk3308_miniloader_v1.36_sd.bin
 #   └── rk3308_bl31_v2.26.elf
 #   tools/
 #   ├── loaderimage
@@ -37,7 +37,7 @@ INSTALL_PATH="usr/lib/linux-u-boot-current-napic"
 MAINTAINER="NapiLab <dj.novikov@gmail.com>"
 
 DDR_BLOB="${BLOBS}/rk3308_ddr_589MHz_uart0_m0_v2.07.bin"
-MINILOADER_BLOB="${BLOBS}/rk3308_miniloader_v1.39.bin"
+MINILOADER_BLOB="${BLOBS}/rk3308_miniloader_v1.36_sd.bin"
 BL31_BLOB="${BLOBS}/rk3308_bl31_v2.26.elf"
 UBOOT_DTB="${SCRIPT_DIR}/u-boot-dtb.bin"
 
